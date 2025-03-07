@@ -369,13 +369,7 @@ const ModelModal: FC<ModelModalProps> = ({
                     <div className='flex justify-center items-center py-3 bg-background-section-burn text-xs text-text-tertiary'>
                       <Lock01 className='mr-1 w-3 h-3 text-text-tertiary' />
                       {t('common.modelProvider.encrypted.front')}
-                      <a
-                        className='text-text-accent mx-1'
-                        target='_blank' rel='noopener noreferrer'
-                        href='https://pycryptodome.readthedocs.io/en/latest/src/cipher/oaep.html'
-                      >
                         PKCS1_OAEP
-                      </a>
                       {t('common.modelProvider.encrypted.back')}
                     </div>
                   )

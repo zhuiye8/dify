@@ -55,17 +55,6 @@ const Form: FC<FormProps> = React.memo(({
             {label[i18n.language] || label.en_US}
             {required && <span className='ml-1 text-red-500'>*</span>}
           </label>
-          {variable === 'endpoint' && (
-            <a
-              href={'https://docs.dify.ai/guides/knowledge-base/external-knowledge-api-documentation' || '/'}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='text-text-accent body-xs-regular flex items-center'
-            >
-              <RiBookOpenLine className='w-3 h-3 text-text-accent mr-1' />
-              {t('dataset.externalAPIPanelDocumentation')}
-            </a>
-          )}
         </div>
         <Input
           type={type === 'secret' ? 'password' : 'text'}

@@ -22,13 +22,7 @@ const PluginPage = () => {
       <div className='fixed bottom-0 w-[472px] h-[42px] flex items-center bg-white text-xs text-gray-500'>
         <LockClosedIcon className='w-3 h-3 mr-1' />
         {t('common.provider.encrypted.front')}
-        <Link
-          className='text-primary-600 mx-1'
-          target='_blank' rel='noopener noreferrer'
-          href='https://pycryptodome.readthedocs.io/en/latest/src/cipher/oaep.html'
-        >
           PKCS1_OAEP
-        </Link>
         {t('common.provider.encrypted.back')}
       </div>
     </div>

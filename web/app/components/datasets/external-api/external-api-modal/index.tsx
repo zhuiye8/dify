@@ -189,13 +189,7 @@ const AddExternalAPIModal: FC<AddExternalAPIModalProps> = ({ data, onSave, onCan
             >
               <RiLock2Fill className='w-3 h-3 text-text-quaternary' />
               {t('dataset.externalAPIForm.encrypted.front')}
-              <a
-                className='text-text-accent'
-                target='_blank' rel='noopener noreferrer'
-                href='https://pycryptodome.readthedocs.io/en/latest/src/cipher/oaep.html'
-              >
                 PKCS1_OAEP
-              </a>
               {t('dataset.externalAPIForm.encrypted.end')}
             </div>
           </div>

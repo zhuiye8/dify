@@ -175,13 +175,6 @@ const ModelProviderPage = ({ searchText }: Props) => {
             <RiArrowDownSLine className={cn('w-4 h-4', collapse && '-rotate-90')} />
             {t('common.modelProvider.installProvider')}
           </div>
-          <div className='flex items-center mb-2 pt-2'>
-            <span className='pr-1 text-text-tertiary system-sm-regular'>{t('common.modelProvider.discoverMore')}</span>
-            <Link target="_blank" href={`${MARKETPLACE_URL_PREFIX}`} className='inline-flex items-center system-sm-medium text-text-accent'>
-              {t('plugin.marketplace.difyMarketplace')}
-              <RiArrowRightUpLine className='w-4 h-4' />
-            </Link>
-          </div>
         </div>
         {!collapse && isAllPluginsLoading && <Loading type='area' />}
         {

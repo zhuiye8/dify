@@ -217,15 +217,6 @@ const AppPublisher = ({
                   {t('workflow.common.embedIntoSite')}
                 </SuggestedAction>
               )}
-            <SuggestedAction
-              onClick={() => {
-                publishedAt && handleOpenInExplore()
-              }}
-              disabled={!publishedAt}
-              icon={<RiPlanetLine className='w-4 h-4' />}
-            >
-              {t('workflow.common.openInExplore')}
-            </SuggestedAction>
             <SuggestedAction disabled={!publishedAt} link='./develop' icon={<FileText className='w-4 h-4' />}>{t('workflow.common.accessAPIReference')}</SuggestedAction>
             {appDetail?.mode === 'workflow' && (
               <WorkflowToolConfigureButton

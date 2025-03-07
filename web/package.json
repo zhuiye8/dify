@@ -1,5 +1,5 @@
 {
-  "name": "dify-web",
+  "name": "nature-Ai",
   "version": "1.0.0",
   "private": true,
   "engines": {
@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
-    "build": "next build",
+    "build": "NODE_OPTIONS='--max-old-space-size=8192' next build",
     "start": "cp -r .next/static .next/standalone/.next/static && cp -r public .next/standalone/public && cross-env PORT=$npm_config_port HOSTNAME=$npm_config_host node .next/standalone/server.js",
     "lint": "pnpm eslint",
     "fix": "next lint --fix",
