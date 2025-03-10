@@ -177,7 +177,7 @@ import { Row, Col, Properties, Property, Heading, SubProperty, Paragraph } from 
   </Col>
   <Col sticky>
 
-    <CodeGroup title="リクエスト" tag="POST" label="/chat-messages" targetCode={`curl -X POST '${props.appDetail.api_base_url}/chat-messages' \\\n--header 'Authorization: Bearer {api_key}' \\\n--header 'Content-Type: application/json' \\\n--data-raw '{\n    "inputs": ${JSON.stringify(props.inputs)},\n    "query": "What are the specs of the iPhone 13 Pro Max?",\n    "response_mode": "streaming",\n    "conversation_id": "",\n    "user": "abc-123",\n    "files": [\n      {\n        "type": "image",\n        "transfer_method": "remote_url",\n        "url": "https://cloud.dify.ai/logo/logo-site.png"\n      }\n    ]\n}'`}>
+    <CodeGroup title="リクエスト" tag="POST" label="/chat-messages" targetCode={`curl -X POST '${props.appDetail.api_base_url}/chat-messages' \\\n--header 'Authorization: Bearer {api_key}' \\\n--header 'Content-Type: application/json' \\\n--data-raw '{\n    "inputs": ${JSON.stringify(props.inputs)},\n    "query": "What are the specs of the iPhone 13 Pro Max?",\n    "response_mode": "streaming",\n    "conversation_id": "",\n    "user": "abc-123",\n    "files": [\n      {\n        "type": "image",\n        "transfer_method": "remote_url",\n        "url": "https://cloud.nature.ai/logo/logo-site.png"\n      }\n    ]\n}'`}>
 
     ```bash {{ title: 'cURL' }}
     curl -X POST '${props.appDetail.api_base_url}/chat-messages' \
@@ -580,7 +580,7 @@ import { Row, Col, Properties, Property, Heading, SubProperty, Paragraph } from 
             "id": "a076a87f-31e5-48dc-b452-0061adbbc922",
             "conversation_id": "cd78daf6-f9e4-4463-9ff2-54257230a0ce",
             "inputs": {
-                "name": "dify"
+                "name": "nature"
             },
             "query": "iphone 13 pro",
             "answer": "iPhone 13 Proは2021年9月24日に発売され、6.1インチのディスプレイと1170 x 2532の解像度を備えています。Hexa-core (2x3.23 GHz Avalanche + 4x1.82 GHz Blizzard)プロセッサ、6 GBのRAMを搭載し、128 GB、256 GB、512 GB、1 TBのストレージオプションを提供します。カメラは12 MP、バッテリー容量は3095 mAhで、iOS 15を搭載しています。",
@@ -936,7 +936,7 @@ import { Row, Col, Properties, Property, Heading, SubProperty, Paragraph } from 
 
     <Properties>
       <Property name='message_id' type='str' key='message_id'>
-        Difyによって生成されたテキストメッセージの場合、生成されたメッセージIDを直接渡します。バックエンドはメッセージIDを使用して対応するコンテンツを検索し、音声情報を直接合成します。message_idとtextが同時に提供される場合、message_idが優先されます。
+        natureによって生成されたテキストメッセージの場合、生成されたメッセージIDを直接渡します。バックエンドはメッセージIDを使用して対応するコンテンツを検索し、音声情報を直接合成します。message_idとtextが同時に提供される場合、message_idが優先されます。
       </Property>
       <Property name='text' type='str' key='text'>
         音声生成コンテンツ。
@@ -948,12 +948,12 @@ import { Row, Col, Properties, Property, Heading, SubProperty, Paragraph } from 
   </Col>
   <Col sticky>
 
-    <CodeGroup title="リクエスト" tag="POST" label="/text-to-audio" targetCode={`curl --location --request POST '${props.appDetail.api_base_url}/text-to-audio' \\\n--header 'Authorization: Bearer ENTER-YOUR-SECRET-KEY' \\\n--form 'text=Hello Nature;user=abc-123;message_id=5ad4cb98-f0c7-4085-b384-88c403be6290`}>
+    <CodeGroup title="リクエスト" tag="POST" label="/text-to-audio" targetCode={`curl --location --request POST '${props.appDetail.api_base_url}/text-to-audio' \\\n--header 'Authorization: Bearer ENTER-YOUR-SECRET-KEY' \\\n--form 'text=Hello nature;user=abc-123;message_id=5ad4cb98-f0c7-4085-b384-88c403be6290`}>
 
     ```bash {{ title: 'cURL' }}
     curl --location --request POST '${props.appDetail.api_base_url}/text-to-audio' \
     --header 'Authorization: Bearer ENTER-YOUR-SECRET-KEY' \
-    --form 'file=Hello Nature;user=abc-123;message_id=5ad4cb98-f0c7-4085-b384-88c403be6290'
+    --form 'file=Hello nature;user=abc-123;message_id=5ad4cb98-f0c7-4085-b384-88c403be6290'
     ```
 
     </CodeGroup>
@@ -1152,7 +1152,7 @@ import { Row, Col, Properties, Property, Heading, SubProperty, Paragraph } from 
     ```json {{ title: '応答' }}
     {
       "tool_icons": {
-        "dalle2": "https://cloud.dify.ai/console/api/workspaces/current/tool-provider/builtin/dalle/icon",
+        "dalle2": "https://cloud.nature.ai/console/api/workspaces/current/tool-provider/builtin/dalle/icon",
         "api_tool": {
           "background": "#252525",
           "content": "\ud83d\ude01"

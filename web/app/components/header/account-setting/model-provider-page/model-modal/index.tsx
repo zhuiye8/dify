@@ -304,8 +304,8 @@ const ModelModal: FC<ModelModalProps> = ({
                 configurationMethod: configurateMethod,
               }} />
 
-              <div className='sticky bottom-0 flex justify-between items-center mt-2 -mx-2 pt-4 px-2 pb-6 flex-wrap gap-y-2 bg-components-panel-bg'>
-                {
+              <div className='sticky bottom-0 flex justify-end items-center mt-2 -mx-2 pt-4 px-2 pb-6 flex-wrap gap-y-2 bg-components-panel-bg'>
+                {/* {
                   (provider.help && (provider.help.title || provider.help.url))
                     ? (
                       <a
@@ -319,7 +319,7 @@ const ModelModal: FC<ModelModalProps> = ({
                       </a>
                     )
                     : <div />
-                }
+                } */}
                 <div>
                   {
                     isEditMode && (
