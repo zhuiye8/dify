@@ -3,23 +3,16 @@ import { useTranslation } from 'react-i18next'
 import { Fragment, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { useContext, useContextSelector } from 'use-context-selector'
-import { RiAccountCircleLine, RiArrowDownSLine, RiArrowRightUpLine, RiBookOpenLine, RiGithubLine, RiInformation2Line, RiLogoutBoxRLine, RiMap2Line, RiSettings3Line, RiStarLine } from '@remixicon/react'
+import { RiAccountCircleLine, RiArrowDownSLine, RiArrowRightUpLine, RiLogoutBoxRLine, RiSettings3Line } from '@remixicon/react'
 import Link from 'next/link'
 import { Menu, Transition } from '@headlessui/react'
-import Indicator from '../indicator'
 import AccountAbout from '../account-about'
-import GithubStar from '../github-star'
-import Support from './support'
-import Compliance from './compliance'
 import classNames from '@/utils/classnames'
 import I18n from '@/context/i18n'
 import Avatar from '@/app/components/base/avatar'
 import { logout } from '@/service/common'
 import AppContext, { useAppContext } from '@/context/app-context'
 import { useModalContext } from '@/context/modal-context'
-import { LanguagesSupported } from '@/i18n/language'
-import { LicenseStatus } from '@/types/feature'
-import { IS_CLOUD_EDITION } from '@/config'
 
 export type IAppSelector = {
   isMobile: boolean
@@ -106,22 +99,22 @@ export default function AppSelector({ isMobile }: IAppSelector) {
                         )}
                         href='/account'
                         target='_self' rel='noopener noreferrer'>
-                        <RiAccountCircleLine className='size-4 flex-shrink-0 text-text-tertiary' />
-                        <div className='flex-grow system-md-regular text-text-secondary px-1'>{t('common.account.account')}</div>
-                        <RiArrowRightUpLine className='size-[14px] flex-shrink-0 text-text-tertiary' />
+                        <RiAccountCircleLine className='size-4 shrink-0 text-text-tertiary' />
+                        <div className='grow system-md-regular text-text-secondary px-1'>{t('common.account.account')}</div>
+                        <RiArrowRightUpLine className='size-[14px] shrink-0 text-text-tertiary' />
                       </Link>}
                     </Menu.Item>
                     <Menu.Item>
                       {({ active }) => <div className={classNames(itemClassName,
                         active && 'bg-state-base-hover',
                       )} onClick={() => setShowAccountSettingModal({ payload: 'members' })}>
-                        <RiSettings3Line className='size-4 flex-shrink-0 text-text-tertiary' />
-                        <div className='flex-grow system-md-regular text-text-secondary px-1'>{t('common.userProfile.settings')}</div>
+                        <RiSettings3Line className='size-4 shrink-0 text-text-tertiary' />
+                        <div className='grow system-md-regular text-text-secondary px-1'>{t('common.userProfile.settings')}</div>
                       </div>}
                     </Menu.Item>
                   </div>
                   <div className='p-1'>
-                    <Menu.Item>
+                    {/* <Menu.Item>
                       {({ active }) => <Link
                         className={classNames(itemClassName, 'group justify-between',
                           active && 'bg-state-base-hover',
@@ -138,8 +131,8 @@ export default function AppSelector({ isMobile }: IAppSelector) {
                     <Support />
                     {IS_CLOUD_EDITION && isCurrentWorkspaceOwner && <Compliance />}
                   </div>
-                  <div className='p-1'>
-                    <Menu.Item>
+                  <div className='p-1'> */}
+                    {/* <Menu.Item>
                       {({ active }) => <Link
                         className={classNames(itemClassName, 'group justify-between',
                           active && 'bg-state-base-hover',
@@ -150,8 +143,8 @@ export default function AppSelector({ isMobile }: IAppSelector) {
                         <div className='flex-grow system-md-regular text-text-secondary px-1'>{t('common.userProfile.roadmap')}</div>
                         <RiArrowRightUpLine className='flex-shrink-0 size-[14px] text-text-tertiary' />
                       </Link>}
-                    </Menu.Item>
-                    {systemFeatures.license.status === LicenseStatus.NONE && <Menu.Item>
+                    </Menu.Item> */}
+                    {/* {systemFeatures.license.status === LicenseStatus.NONE && <Menu.Item>
                       {({ active }) => <Link
                         className={classNames(itemClassName, 'group justify-between',
                           active && 'bg-state-base-hover',
@@ -165,8 +158,8 @@ export default function AppSelector({ isMobile }: IAppSelector) {
                           <GithubStar className='system-2xs-medium-uppercase text-text-tertiary' />
                         </div>
                       </Link>}
-                    </Menu.Item>}
-                    {
+                    </Menu.Item>} */}
+                    {/* {
                       document?.body?.getAttribute('data-public-site-about') !== 'hide' && (
                         <Menu.Item>
                           {({ active }) => <div className={classNames(itemClassName, 'justify-between',
@@ -181,7 +174,7 @@ export default function AppSelector({ isMobile }: IAppSelector) {
                           </div>}
                         </Menu.Item>
                       )
-                    }
+                    } */}
                   </div>
                   <Menu.Item>
                     {({ active }) => <div className='p-1' onClick={() => handleLogout()}>
@@ -190,8 +183,8 @@ export default function AppSelector({ isMobile }: IAppSelector) {
                           active && 'bg-state-base-hover',
                         )}
                       >
-                        <RiLogoutBoxRLine className='flex-shrink-0 size-4 text-text-tertiary' />
-                        <div className='flex-grow system-md-regular text-text-secondary px-1'>{t('common.userProfile.logout')}</div>
+                        <RiLogoutBoxRLine className='shrink-0 size-4 text-text-tertiary' />
+                        <div className='grow system-md-regular text-text-secondary px-1'>{t('common.userProfile.logout')}</div>
                       </div>
                     </div>}
                   </Menu.Item>
