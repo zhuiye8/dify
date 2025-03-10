@@ -55,14 +55,14 @@ const CardWrapper = ({
               >
                 {t('plugin.detailPanel.operation.install')}
               </Button>
-              <a href={`${getPluginLinkInMarketplace(plugin)}?language=${localeFromLocale}`} target='_blank' className='block flex-1 shrink-0 w-[calc(50%-4px)]'>
+              {/* <a href={`${getPluginLinkInMarketplace(plugin)}?language=${localeFromLocale}`} target='_blank' className='block flex-1 shrink-0 w-[calc(50%-4px)]'>
                 <Button
                   className='w-full gap-0.5'
                 >
                   {t('plugin.detailPanel.operation.detail')}
                   <RiArrowRightUpLine className='ml-1 w-4 h-4' />
                 </Button>
-              </a>
+              </a> */}
             </div>
           )
         }

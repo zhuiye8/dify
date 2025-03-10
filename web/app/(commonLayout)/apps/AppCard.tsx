@@ -248,10 +248,10 @@ const AppCard = ({ app, onRefresh }: AppCardProps) => {
             </div>
           </>
         )}
-        <Divider className="!my-1" />
-        <button className={s.actionItem} onClick={onClickInstalledApp}>
+        {/* <Divider className="!my-1" /> */}
+        {/* <button className={s.actionItem} onClick={onClickInstalledApp}>
           <span className={s.actionName}>{t('app.openInExplore')}</span>
-        </button>
+        </button> */}
         <Divider className="!my-1" />
         <div
           className={cn(s.actionItem, s.deleteActionItem, 'group')}

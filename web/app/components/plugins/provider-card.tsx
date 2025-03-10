@@ -45,13 +45,13 @@ const ProviderCard: FC<Props> = ({
             <Title title={getValueFromI18nObject(label)} />
             {/* <RiVerifiedBadgeLine className="shrink-0 ml-0.5 w-4 h-4 text-text-accent" /> */}
           </div>
-          <div className='mb-1 flex justify-between items-center h-4'>
+          {/* <div className='mb-1 flex justify-between items-center h-4'>
             <div className='flex items-center'>
               <div className='text-text-tertiary system-xs-regular'>{org}</div>
               <div className='mx-2 text-text-quaternary system-xs-regular'>·</div>
               <DownloadCount downloadCount={payload.install_count || 0} />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <Description className='mt-3' text={getValueFromI18nObject(payload.brief)} descriptionLineRows={2}></Description>
@@ -70,7 +70,7 @@ const ProviderCard: FC<Props> = ({
         >
           {t('plugin.detailPanel.operation.install')}
         </Button>
-        <Button
+        {/* <Button
           className='grow'
           variant='secondary'
         >
@@ -78,7 +78,7 @@ const ProviderCard: FC<Props> = ({
             {t('plugin.detailPanel.operation.detail')}
             <RiArrowRightUpLine className='w-4 h-4' />
           </a>
-        </Button>
+        </Button> */}
       </div>
       {
         isShowInstallFromMarketplace && (

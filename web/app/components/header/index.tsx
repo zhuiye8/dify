@@ -94,9 +94,9 @@ const Header = () => {
       }
       <div className='flex items-center shrink-0'>
         <EnvNav />
-        <div className='mr-3'>
+        {/* <div className='mr-3'>
           <PluginsNav />
-        </div>
+        </div> */}
         <AccountDropdown isMobile={isMobile} />
       </div>
       {
