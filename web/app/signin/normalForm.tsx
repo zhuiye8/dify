@@ -136,7 +136,6 @@ const NormalForm = () => {
           </div>
           : <div className="w-full mx-auto">
             <h2 className="title-4xl-semi-bold text-text-primary">{t('login.pageTitle')}</h2>
-            <p className='mt-2 body-md-regular text-text-tertiary'>{t('login.welcome')}</p>
           </div>}
         <div className="bg-white">
           <div className="flex flex-col gap-3 mt-6">
@@ -184,21 +183,6 @@ const NormalForm = () => {
               </div>
             </div>
           </>}
-          <div className="w-full block mt-2 system-xs-regular text-text-tertiary">
-            {t('login.tosDesc')}
-            &nbsp;
-            <Link
-              className='system-xs-medium text-text-secondary hover:underline'
-              target='_blank' rel='noopener noreferrer'
-              href='https://dify.ai/terms'
-            >{t('login.tos')}</Link>
-            &nbsp;&&nbsp;
-            <Link
-              className='system-xs-medium text-text-secondary hover:underline'
-              target='_blank' rel='noopener noreferrer'
-              href='https://dify.ai/privacy'
-            >{t('login.pp')}</Link>
-          </div>
           {IS_CE_EDITION && <div className="w-hull block mt-2 system-xs-regular text-text-tertiary">
             {t('login.goToInit')}
             &nbsp;

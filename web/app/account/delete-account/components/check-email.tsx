@@ -32,10 +32,6 @@ export default function CheckEmail(props: DeleteAccountProps) {
     <div className='py-1 text-text-destructive body-md-medium'>
       {t('common.account.deleteTip')}
     </div>
-    <div className='pt-1 pb-2 text-text-secondary body-md-regular'>
-      {t('common.account.deletePrivacyLinkTip')}
-      <Link href='https://dify.ai/privacy' className='text-text-accent'>{t('common.account.deletePrivacyLink')}</Link>
-    </div>
     <label className='mt-3 mb-1 h-6 flex items-center system-sm-semibold text-text-secondary'>{t('common.account.deleteLabel')}</label>
     <Input placeholder={t('common.account.deletePlaceholder') as string} onChange={(e) => {
       setUserInputEmail(e.target.value)

@@ -176,7 +176,7 @@ const translation = {
     noPluginFound: 'Плагин не найден',
     sortBy: 'Черный город',
     empower: 'Расширьте возможности разработки ИИ',
-    difyMarketplace: 'Торговая площадка Dify',
+    difyMarketplace: 'Торговая площадка Nature',
     viewMore: 'Подробнее',
     and: 'и',
     discover: 'Обнаруживать',

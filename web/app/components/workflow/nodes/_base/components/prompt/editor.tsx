@@ -166,7 +166,7 @@ const Editor: FC<Props> = ({
                     popupContent={
                       <div>
                         <div>{t('workflow.common.enableJinja')}</div>
-                        <a className='text-[#155EEF]' target='_blank' href='https://jinja.palletsprojects.com/en/2.10.x/'>{t('workflow.common.learnMore')}</a>
+                        {/* <a className='text-[#155EEF]' target='_blank' href='https://jinja.palletsprojects.com/en/2.10.x/'>{t('workflow.common.learnMore')}</a> */}
                       </div>
                     }
                     needsDelay

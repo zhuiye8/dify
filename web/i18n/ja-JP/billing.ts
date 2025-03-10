@@ -94,7 +94,7 @@ const translation = {
       title: '{{count,number}}の注釈クォータ制限',
       tooltip: '手動での回答の編集と注釈により、カスタマイズ可能な高品質の質問応答機能をアプリに提供します。（チャットアプリのみに適用）',
     },
-    ragAPIRequestTooltip: 'Difyのナレッジベース処理機能のみを呼び出すAPI呼び出しの数を指します。',
+    ragAPIRequestTooltip: 'Natureのナレッジベース処理機能のみを呼び出すAPI呼び出しの数を指します。',
     receiptInfo: 'チームオーナーとチーム管理者のみが購読および請求情報を表示できます',
   },
   plans: {
@@ -119,7 +119,7 @@ const translation = {
       features: [
         'すべてのコア機能がパブリック リポジトリでリリースされる',
         '単一のワークスペース',
-        'Difyオープンソースライセンスに準拠しています',
+        'Natureオープンソースライセンスに準拠しています',
       ],
     },
     premium: {
@@ -150,9 +150,9 @@ const translation = {
         'エンタープライズ限定の機能',
         '複数のワークスペースと企業の管理',
         'SSO',
-        'Dify Partnersによる交渉済みのSLA',
+        'Nature Partnersによる交渉済みのSLA',
         '高度なセキュリティ',
-        'Dify公式によるアップデートとメンテナンス',
+        'Nature公式によるアップデートとメンテナンス',
         '専門的な技術サポート',
       ],
     },

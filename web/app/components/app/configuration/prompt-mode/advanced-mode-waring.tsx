@@ -23,13 +23,13 @@ const AdvancedModeWarning: FC<Props> = ({
       <div className='flex justify-between items-center'>
         <div className='text-xs leading-[18px] '>
           <span className='text-gray-700'>{t('appDebug.promptMode.advancedWarning.description')}</span>
-          <a
+          {/* <a
             className='font-medium text-[#155EEF]'
             href={`https://docs.dify.ai/${locale === LanguagesSupported[1] ? 'v/zh-hans/guides/application-design/prompt-engineering' : 'features/prompt-engineering'}`}
             target='_blank' rel='noopener noreferrer'
           >
             {t('appDebug.promptMode.advancedWarning.learnMore')}
-          </a>
+          </a> */}
         </div>
 
         <div className='flex items-center space-x-1'>

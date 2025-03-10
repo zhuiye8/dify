@@ -335,7 +335,7 @@ function AppPreview({ mode }: { mode: AppMode }) {
     <h4 className='system-sm-semibold-uppercase text-text-secondary'>{previewInfo.title}</h4>
     <div className='mt-1 system-xs-regular text-text-tertiary max-w-96 min-h-8'>
       <span>{previewInfo.description}</span>
-      {previewInfo.link && <Link target='_blank' href={previewInfo.link} className='text-text-accent ml-1'>{t('app.newApp.learnMore')}</Link>}
+      {/* {previewInfo.link && <Link target='_blank' href={previewInfo.link} className='text-text-accent ml-1'>{t('app.newApp.learnMore')}</Link>} */}
     </div>
   </div>
 }

@@ -216,9 +216,9 @@ export const AgentStrategy = memo((props: AgentStrategyProps) => {
           title={t('workflow.nodes.agent.strategy.configureTip')}
           description={<div className='text-text-tertiary text-xs'>
             {t('workflow.nodes.agent.strategy.configureTipDesc')} <br />
-            <Link href={'/'} className='text-text-accent-secondary'>
+            {/* <Link href={'/'} className='text-text-accent-secondary'>
               {t('workflow.nodes.agent.learnMore')}
-            </Link>
+            </Link> */}
           </div>}
         />
     }

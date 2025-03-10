@@ -78,11 +78,11 @@ const NewFeaturePanel = ({
                 </div>
                 <div className='p-1 text-text-primary system-xs-medium'>
                   <span>{isChatMode ? t('workflow.common.fileUploadTip') : t('workflow.common.ImageUploadLegacyTip')}</span>
-                  <a
+                  {/* <a
                     className='text-text-accent'
                     href={`https://docs.dify.ai/${locale === LanguagesSupported[1] ? 'v/zh-hans/' : ''}guides/workflow/bulletin`}
                     target='_blank' rel='noopener noreferrer'
-                  >{t('workflow.common.featuresDocLink')}</a>
+                  >{t('workflow.common.featuresDocLink')}</a> */}
                 </div>
               </div>
             </div>

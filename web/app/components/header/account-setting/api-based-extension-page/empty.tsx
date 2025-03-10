@@ -11,14 +11,14 @@ const Empty = () => {
         <Webhooks className='w-6 h-6 text-gray-500' />
       </div>
       <div className='mb-2 text-sm text-gray-600'>{t('common.apiBasedExtension.title')}</div>
-      <a
+      {/* <a
         className='flex items-center mb-2 h-[18px] text-xs text-primary-600'
         href={t('common.apiBasedExtension.linkUrl') || '/'}
         target='_blank' rel='noopener noreferrer'
       >
         <BookOpen01 className='mr-1 w-3 h-3' />
         {t('common.apiBasedExtension.link')}
-      </a>
+      </a> */}
     </div>
   )
 }
